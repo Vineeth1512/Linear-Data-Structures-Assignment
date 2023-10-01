@@ -187,7 +187,6 @@ function isOperator(char) {
 
 function prefixToInfix(prefix) {
     const stack = [];
-
     for (let i = prefix.length - 1; i >= 0; i--) {
         const token = prefix[i];
 
@@ -201,7 +200,6 @@ function prefixToInfix(prefix) {
         }
     }
 
-    // The top of the stack will contain the infix expression
     return stack.pop();
 }
 
@@ -301,9 +299,7 @@ console.log("Afrer reverse : " + stack1.items);
  * Q10. Write a program to find the smallest number using a stack.
  */
 
-
 var stack2 = new Stack();
-
 stack2.insert(6);
 stack2.insert(3);
 stack2.insert(8);
